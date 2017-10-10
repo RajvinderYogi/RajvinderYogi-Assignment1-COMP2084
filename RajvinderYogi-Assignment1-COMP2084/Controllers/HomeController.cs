@@ -22,7 +22,7 @@ namespace RajvinderYogi_Assignment1_COMP2084.Controllers
 
         public ActionResult Contact()
         {
-            ViewBag.Message = "Your contact page.";
+            ViewBag.Message = "Feel free to contact me!";
 
             return View();
         }
