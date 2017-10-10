@@ -1,0 +1,51 @@
+﻿@model RajvinderYogi_Assignment1_COMP2084.Models.CarDetail
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>CarDetail</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ClassicCar.CarName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ClassicCar.CarName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarBrand)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarBrand)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarModel)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarModel)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CarYear)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CarYear)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.DetailsId }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>
