@@ -1,11 +1,11 @@
 ﻿@model IEnumerable<RajvinderYogi_Assignment1_COMP2084.Models.CarDetail>
 
 @{
-    ViewBag.Title = "Index";
+    ViewBag.Title = "Inventory";
     Layout = "~/Views/Shared/_Layout.cshtml";
 }
 
-<h2>Index</h2>
+<h2>Inventory</h2>
 
 <p>
     @Html.ActionLink("Create New", "Create")
@@ -13,18 +13,20 @@
 <table class="table">
     <tr>
         <th>
-            @Html.DisplayNameFor(model => model.ClassicCar.CarName)
+            Name
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CarBrand)
+            Brand
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CarModel)
+            Model
         </th>
         <th>
-            @Html.DisplayNameFor(model => model.CarYear)
+            Year
         </th>
-        <th></th>
+        <th>
+            Action Links
+        </th>
     </tr>
 
 @foreach (var item in Model) {
